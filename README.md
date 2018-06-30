@@ -1,4 +1,4 @@
-# `vrchat-time-shaders`
+# vrchat-time-shaders
 Utility shaders to implement time-related stuffs in VRChat.
 
 ## Table of Contents
@@ -16,4 +16,4 @@ VRChatに時間に関係するちょっとしたオブジェクトを追加す�
 - docs: `VRC_WebPanel`経由でアクセスするAPIページ
 
 ## 使用方法
-詳細は[Wiki](wiki)をご参照ください。
+詳細は[Wiki](https://github.com/y23586/vrchat-time-shaders/wiki)をご参照ください。
