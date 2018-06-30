@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+div {
+    width: 12.5%;
+    height: 12.5%;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
