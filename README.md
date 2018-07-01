@@ -1,4 +1,6 @@
 # vrchat-time-shaders
+![](preview.png)
+
 Utility shaders to implement time-related stuffs in VRChat.
 
 ## Table of Contents
@@ -8,7 +10,7 @@ Utility shaders to implement time-related stuffs in VRChat.
 
 ---
 
-VRChatに時間に関係するちょっとしたオブジェクトを追加するパッケージです。
+時間に関係するちょっとしたオブジェクトをVRChatに追加するパッケージです。
 
 ## 内容物
 - assets: パッケージ内で使用されているテクスチャ・シェーダ
