@@ -2,6 +2,12 @@
 ![](preview.png)
 
 Utility shaders to implement time-related stuffs in VRChat.
+This package currently supports two different backends:
+
+- [VRC_WebPanel](https://docs.vrchat.com/docs/vrc_webpanel)
+- [VRC_Panorama](https://docs.vrchat.com/docs/vrc_panorama)
+
+Since VRC_WebPanel is disabled due to the security issue (as of October 2018), you must use the VRC_Panorama backend (see the example scene for details).
 
 ## Table of Contents
 - assets: Textures and shaders used in the package
