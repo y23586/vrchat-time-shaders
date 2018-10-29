@@ -1,6 +1,7 @@
 ﻿Shader "VTS/DigitalClock" {
     Properties {
         _Color ("Color", Color) = (1,1,1,1)
+        _Emissive ("Emission", Color) = (0,0,0,1)
         _TexChars ("Characters", 2D) = "white" {}
         _TexWP ("WebPanelRender", 2D) = "white" {}
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
@@ -27,6 +28,7 @@
         half _Glossiness;
         half _Metallic;
         fixed4 _Color;
+        fixed4 _Emissive;
         float _Cutoff;
         int _IsPanorama;
 
@@ -64,6 +66,7 @@
             fixed4 c = tex2D(_TexChars, uv0);
             clip(c.a-_Cutoff);
             o.Albedo = c.rgb;
+            o.Emission = (_Emissive*((c.r + c.g + c.b)/3));
             o.Metallic = _Metallic;
             o.Smoothness = _Glossiness;
             const float clipThreshold = 0.01;
