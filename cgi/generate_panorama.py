@@ -3,8 +3,10 @@
 import io
 import os
 import sys
+import cgi
 from PIL import Image, ImageFilter, ImageDraw
 from datetime import datetime
+from dateutil import tz
 
 CELL = 8
 WRITE_TO_STDOUT = False
@@ -22,7 +24,14 @@ def drawCell(x, y, v):
     b = 255 if ((v&(1<<2)) != 0) else 0
     dr.rectangle([x0, y0, x1, y1], fill=(r, g, b))
 
-now = datetime.now()
+params = cgi.FieldStorage()
+if "timezone" in params:
+    offset = tz.tzoffset("IST", 3600*int(params["timezone"].value))
+
+else:
+    offset = None
+
+now = datetime.now(tz=offset)
 year   = now.year-1900
 month  = now.month-1
 day    = now.day
