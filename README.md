@@ -1,5 +1,5 @@
 # vrchat-time-shaders
-![](preview.png)
+![](media/image.png)
 
 Utility shaders to implement time-related stuffs in VRChat.
 
@@ -20,6 +20,7 @@ The demo world is available [here](https://www.vrchat.net/home/launch?worldId=wr
 ## Table of Contents
 - assets: Textures and shaders used in the package
 - cgi: The Panorama API
+  - Currently the API is provided on [y23586.net](https://y23586.net), but you can host your own backend on your server by using this script.
 - unity-packages: The Unity package for VRChat world projects
 - docs: The WebPanel API
 
@@ -45,5 +46,7 @@ The demo world is available [here](https://www.vrchat.net/home/launch?worldId=wr
 
 ## 内容物
 - assets: パッケージ内で使用されているテクスチャ・シェーダ
+- cgi: パノラマ用画像生成スクリプト
+  - 現在は[y23586.net](https://y23586.net)でAPIを提供しているためサーバを用意する必要はありませんが、このスクリプトをサーバに配置すれば自前でAPIを提供できます。
 - unity-packages: Unityパッケージ本体
 - docs: `VRC_WebPanel`経由でアクセスするAPIページ
