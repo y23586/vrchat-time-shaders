@@ -1,6 +1,11 @@
 # vrchat-time-shaders
 ![](media/image.png)
 
+> [!IMPORTANT]
+> This package has been discontinued because it is not compatible with VRChat SDK 3.
+> The time-retrieval server used by uploaded SDK 2 worlds (y23586.net) is scheduled to remain in operation beyond 2026.
+> Thank you for using this package!
+
 Utility shaders to implement time-related stuffs in VRChat.
 
 ## Demo
@@ -25,6 +30,11 @@ The demo world is available [here](https://www.vrchat.net/home/launch?worldId=wr
 - docs: The WebPanel API
 
 ---
+
+> [!IMPORTANT]
+> このパッケージはVRChat SDK 3に対応していないため廃止されました。
+> アップロード済みのSDK 2ワールドで使用されている時刻取得用サーバ（y23586.net）は、少なくとも2026年時点では今後も継続して運用予定です。
+> ご愛顧ありがとうございました！
 
 時間に関係するちょっとしたオブジェクトをVRChatに追加するパッケージです。
 
